@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "109561724146",
+    "firebase_url": "https://treasuredloginbwegener.firebaseio.com",
+    "project_id": "treasuredloginbwegener",
+    "storage_bucket": "treasuredloginbwegener.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109561724146:android:94351f310bdd04c5",
+        "android_client_info": {
+          "package_name": "edu.orangecoastcollege.cs273.treasuredloginbwegener"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "109561724146-h3tpg0hj6o52m1qks3sf314vcmnc4i6e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.orangecoastcollege.cs273.treasuredloginbwegener",
+            "certificate_hash": "66d653f9553d54e822369fbc1c7150fff47d1b72"
+          }
+        },
+        {
+          "client_id": "109561724146-q6om38s0n30iesnum9710ensjjpe7jt9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkevHzQWNYC9Sa8cK3TiDXAyKTyzWxIGM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "109561724146-q6om38s0n30iesnum9710ensjjpe7jt9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
