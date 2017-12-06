@@ -15,6 +15,11 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+/**
+ * The <code>LoginActivity</code> is where firebase is initialized
+ * and where the user can log in if they have created an account or
+ * where they can create an account.
+ */
 public class LoginActivity extends AppCompatActivity {
 
     private static final String TAG = "TreasuredLogin";
@@ -27,7 +32,11 @@ public class LoginActivity extends AppCompatActivity {
 
     private FirebaseUser mUser;
 
-
+    /**
+     * The <code>onCreate</code> is where edit texts are instantiated
+     * and where it checks to see if a user is already logged in.
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -136,6 +145,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * This handles both of the buttons, if the user hits the create account button it triggers
+     * the createAccount method, however if the user hits the sign in button it checks to see
+     * if the user exists in the signIn method before sending the user to goToTreasure.
+     * @param v
+     */
     // DONE (8): Create a public void handleLoginButtons(View v) that checks the id of the button clicked.
     // DONE (8): If the button is createAccountButton, call the createAccount() method, else if it's signInButton, call the signIn() method.
     public void handleLoginButtons(View v)
