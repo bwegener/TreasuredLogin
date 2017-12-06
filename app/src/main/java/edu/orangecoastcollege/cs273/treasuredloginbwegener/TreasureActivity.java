@@ -29,17 +29,17 @@ public class TreasureActivity extends AppCompatActivity {
         TextView welcomeTextView = (TextView) findViewById(R.id.welcomeTextView);
 
         //DONE (4): Set the text view's text to "Welcome " + user's email address
-        welcomeTextView.setText("Welcome " + mUser.getEmail());
+        welcomeTextView.setText(getString(R.string.welcome_message, mUser.getEmail()));
 
     }
 
 
-    // TODO (5): Create a public void handleSignOut(View v) that signs out of Firebase authentication,
-    // TODO (5): finishes this activity and starts a new Intent back to the LoginActivity.
+    // DONE (5): Create a public void handleSignOut(View v) that signs out of Firebase authentication,
+    // DONE (5): finishes this activity and starts a new Intent back to the LoginActivity.
     public void handleSignOut(View v)
     {
-
-
+        // Signs out the user
+        mAuth.signOut();
         finish();
         Intent loginIntent = new Intent(this, LoginActivity.class);
         startActivity(loginIntent);

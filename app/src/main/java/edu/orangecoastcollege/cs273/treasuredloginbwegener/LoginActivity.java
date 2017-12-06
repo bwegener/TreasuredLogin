@@ -120,7 +120,11 @@ public class LoginActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful())
                     {
-                        goToTreasure();
+                        mUser = mAuth.getCurrentUser();
+                        if (mUser.isEmailVerified())
+                            goToTreasure();
+                        else
+                            Toast.makeText(LoginActivity.this, "Please verify your account in the email: " + mUser.getEmail(), Toast.LENGTH_LONG).show();
                     }
                     else {
                         Toast.makeText(LoginActivity.this, "Sign in failed. Please try again.", Toast.LENGTH_LONG).show();
